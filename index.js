@@ -12,7 +12,6 @@ app.use(express.json());
 app.use(cors());
 
 
-// Register Route
 app.post("/register", async (req, resp) => {
     try {
         let user = new User(req.body);
